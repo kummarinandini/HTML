@@ -1,0 +1,68 @@
+.container{
+    margin-top: 30px;
+    border-top: 8px solid rgb(27, 163, 165) ;
+    background-color: rgba(211, 211, 211, 0.411);
+    color: rgb(63, 179, 224);
+    height:100px;
+    padding-left: 60px;
+}
+nav{
+    margin-top:-10px;  
+    margin-left:-30px;
+}
+.container a{
+    text-decoration: none;
+    padding:0 20px 0 20px;
+    color: rgb(64, 190, 221)
+}
+.container a:hover{
+    background-color:rgb(240, 182, 232);
+    
+}
+section h2,h3{
+    color: rgb(27, 163, 165);
+    font-size: 35px;
+}
+section>figure{
+    margin-left: 0px;
+}
+section>figure b{
+    color:rgba(0, 0, 0, 0.747);
+    font-family:Arial, Helvetica, sans-serif;
+}
+section article .list-item{
+    color:rgba(0, 0, 0, 0.747);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+section a{
+    color:rgb(27, 163, 165);
+    text-decoration: none;
+}
+
+.related-post{
+    width:500px;
+    height:425px;
+    margin-top: 40px;
+    border-top: 5px solid rgb(27, 163, 165) ;
+    border-bottom: 5px solid rgb(27, 163, 165);
+    margin-bottom:-18px;
+}
+.related-post li{
+    margin-top:-20px;
+    list-style: none;
+}
+.related-post h4{
+    padding-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.related-post p{
+    margin-top:5px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
