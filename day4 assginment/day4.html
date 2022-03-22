@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+       .container{
+            display:grid;
+            grid-template-columns:repeat(6,1fr);
+            grid-auto-rows: minmax(50px,auto);
+        }    
+        
+        .header{
+            background-color: rgba(41, 114, 223, 0.8);
+            grid-column: 1/8;
+            text-align:center;
+            color:black;
+            padding: 30px;
+            grid-row: 1/3;
+            
+        }
+        .items ul{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;  
+        }
+        .items li{
+            float: left;
+            list-style-type: none
+        }
+        li a{
+            text-decoration: none;
+            display:block;
+            text-align: center;
+            padding:18px 60px;
+            color: rgb(172, 30, 129);
+        }
+        .nav{
+            background-color:rgb(216, 190, 152);
+            grid-column: 1/8;
+            grid-row: 3/4;
+            
+           
+        }
+        li a:hover{
+            background-color: rgb(235, 225, 219);
+            color: green;
+        }
+        .section{
+            padding-top: 30px;
+            grid-column: 1/6;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 20px;
+            padding-right: 10px;
+            line-height: 150%;
+            grid-row:4/11;
+            background-color:rgb(149, 216, 194);
+            font-size:15px;
+        }
+        .section article{
+            margin-top:20px ;
+        }
+        .aside{
+            background-color:rgb(238, 236, 218);
+            grid-column: 6/8;
+            list-style-position: inside;
+            padding-top: 50px;
+            padding-left: 30px;
+            display: block;
+            grid-row: 4/11;
+            min-width:100px;
+        }
+        .aside-item{
+            list-style-position: inside;
+            display: block;
+        }
+        .footer{
+            background-color:  rgba(129, 49, 63,0.8);
+            grid-column: 1/8;
+            grid-row: 11;
+            text-align:right;
+            padding:10px;
+            color:aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>John's Animal World</h1>
+        </div>
+        <div class="nav">
+            <ul class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h1>Lion</h1>
+            <article>
+             The lion(Panthera leo) is a large cat of the genus Panthera native to Africa and India.
+             It has a muscular,deep-chested body,short,rounded head,round ears,and a hairy tuft  
+             at the end of its tail.It is sexually dimorphic;adult male lions are larger than females
+             and have a prominent mane.It is a social species,forming groups called prides.
+             A lion's pride consists of a few adult males,related females, and cubs.
+             Groups of female lions usually hunt together,preying mostly on large ungulates.
+             The lion is an apex and keystone predator,although some lions scavenge
+             when opportunites occur and have been known to hunt humans,
+             the species typically does not.
+            </article>
+        </div>
+        <div class="aside">
+            <ul class="aside-items">
+                <li>Home</li>
+                <li>Animals</li>
+                <li>Contact</li>
+                <li>About Us</li>
+
+            </ul>
+        </div>
+        <div class="footer">
+            <h5>john@animalsworld.org</h5>
+        </div>
+    </div>
+    
+</body>
+</html>
