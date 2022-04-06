@@ -1,0 +1,10 @@
+
+
+.mydiv{
+    width: 300px;
+}
+
+.mydiv :hover{
+    background-color: rgb(185, 175, 239);
+    color: white;
+}

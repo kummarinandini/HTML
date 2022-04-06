@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+           
+        }
+        th, td{
+            padding: 10px 10px;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        function fn()
+        {
+            let t = document.createElement('table');
+          let h = document.createElement('thead');
+            let tbody = document.createElement('tbody');
+
+            t.appendChild(h);
+            t.appendChild(tbody);
+// first one
+
+        document.getElementById('tab').appendChild(t);
+        let row_1 = document.createElement('tr');
+         let heading_1 = document.createElement('th');
+           heading_1.innerHTML = "id";
+          let heading_2 = document.createElement('th');
+          heading_2.innerHTML = "Name";
+          let heading_3 = document.createElement('th');
+          heading_3.innerHTML = "Location";
+          let heading_4 = document.createElement('th');
+          heading_4.innerHTML = "Salary";
+          let heading_5 = document.createElement('th');
+          heading_5.innerHTML = "Company";
+
+         row_1.appendChild(heading_1);
+         row_1.appendChild(heading_2);
+          row_1.appendChild(heading_3);
+          row_1.appendChild(heading_4);
+          row_1.appendChild(heading_5);
+           h.appendChild(row_1);
+
+// second one
+
+           let row_2 = document.createElement('tr');
+         let row_2_data_1 = document.createElement('td');
+         row_2_data_1.innerHTML = "1.";
+         let row_2_data_2 = document.createElement('td');
+         row_2_data_2.innerHTML = "Nandu";
+           let row_2_data_3 = document.createElement('td');
+          row_2_data_3.innerHTML = "Banglore";
+          let row_2_data_4 = document.createElement('td');
+          row_2_data_4.innerHTML = "45k";
+          let row_2_data_5 = document.createElement('td');
+          row_2_data_5.innerHTML = "Publicis sapient";
+
+
+       row_2.appendChild(row_2_data_1);
+        row_2.appendChild(row_2_data_2);
+        row_2.appendChild(row_2_data_3);
+        row_2.appendChild(row_2_data_4);
+        row_2.appendChild(row_2_data_5);
+        tbody.appendChild(row_2);
+
+        //third one
+
+        let row_3 = document.createElement('tr');
+     let row_3_data_1 = document.createElement('td');
+      row_3_data_1.innerHTML = "2.";
+     let row_3_data_2 = document.createElement('td');
+      row_3_data_2.innerHTML = "Jaya";
+     let row_3_data_3 = document.createElement('td');
+      row_3_data_3.innerHTML = "Hyderabad";
+      let row_3_data_4 = document.createElement('td');
+      row_3_data_4.innerHTML = "50k";
+     let row_3_data_5 = document.createElement('td');
+      row_3_data_5.innerHTML = "Tcs";
+
+         row_3.appendChild(row_3_data_1);
+        row_3.appendChild(row_3_data_2);
+        row_3.appendChild(row_3_data_3);
+        row_3.appendChild(row_3_data_4);
+        row_3.appendChild(row_3_data_5);
+          tbody.appendChild(row_3);
+
+     //fourth one
+
+     let row_4 = document.createElement('tr');
+     let row_4_data_1 = document.createElement('td');
+      row_4_data_1.innerHTML = "3.";
+     let row_4_data_2 = document.createElement('td');
+      row_4_data_2.innerHTML = "Kummari";
+     let row_4_data_3 = document.createElement('td');
+      row_4_data_3.innerHTML = "Telangana";
+      let row_4_data_4 = document.createElement('td');
+      row_4_data_4.innerHTML = "50k";
+     let row_4_data_5 = document.createElement('td');
+      row_4_data_5.innerHTML = "Wipro";
+
+         row_4.appendChild(row_4_data_1);
+        row_4.appendChild(row_4_data_2);
+        row_4.appendChild(row_4_data_3);
+        row_4.appendChild(row_4_data_4);
+        row_4.appendChild(row_4_data_5);
+          tbody.appendChild(row_4);
+
+    //fourth one
+
+    let row_5 = document.createElement('tr');
+     let row_5_data_1 = document.createElement('td');
+      row_5_data_1.innerHTML = "4.";
+     let row_5_data_2 = document.createElement('td');
+      row_5_data_2.innerHTML = "Devi";
+     let row_5_data_3 = document.createElement('td');
+      row_5_data_3.innerHTML = "Kolkatha";
+      let row_5_data_4 = document.createElement('td');
+      row_5_data_4.innerHTML = "50k";
+     let row_5_data_5 = document.createElement('td');
+      row_5_data_5.innerHTML = "Cts";
+
+         row_5.appendChild(row_5_data_1);
+        row_5.appendChild(row_5_data_2);
+        row_5.appendChild(row_5_data_3);
+        row_5.appendChild(row_5_data_4);
+        row_5.appendChild(row_5_data_5);
+          tbody.appendChild(row_5);
+
+   
+        }
+    </script>
+
+</head>
+<body>
+    <button onclick="fn()">create table</button>
+    <div id="tab">
+
+    </div>
+</body>
+</html>
